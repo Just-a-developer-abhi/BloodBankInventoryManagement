@@ -1,1 +1,18 @@
-<p>donors-data works!</p>
+<app-header></app-header>
+
+<div class="donor-list-container">
+    <h1>ALL OUR <strong>DONORS</strong></h1>
+    <button class="add-donor-btn" (click)="addNewDonor()">Add New Donor</button>
+    <div class="donor-list">
+      <div *ngFor="let donor of donors" class="donor-card">
+        <!-- <img [src]="donor.profilePicture" alt="{{ donor.fullName }}'s Profile Picture" class="profile-picture"/> -->
+        <h2>{{ donor.fullName }}</h2>
+        <p>Blood Group: {{ donor.bloodGroup }}</p>
+        <p>Age: {{ donor.age }}</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+

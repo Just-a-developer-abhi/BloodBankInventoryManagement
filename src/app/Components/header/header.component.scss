@@ -1,0 +1,65 @@
+@import '../../../styles.scss';
+
+.container{
+    padding: 20px;
+    background-color: $card-background-color;
+   
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $card-background-color;
+      color: black;
+      padding: 10px 50px;
+      border-radius: 15px;
+      width: 100%;
+      box-shadow: #333 0px 0px 10px;
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+  
+        li {
+          margin: 0 15px;
+          cursor: pointer;
+          transition: color 0.2s;
+  
+          &:hover {
+            color: #6D3D14;
+          }
+        }
+      }
+    }
+}
+
+.profile{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2{
+    cursor: pointer;
+    margin: 10px;
+
+    &:hover{
+      color: $primary-color;
+    }
+  }
+
+  .login-btn{
+    // border: 1px solid $primary-color; 
+    padding: 5px;
+    background-color: $background-color;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: $box-shadow;
+
+    &:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+  }

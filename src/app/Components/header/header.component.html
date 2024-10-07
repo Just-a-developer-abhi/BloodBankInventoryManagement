@@ -1,0 +1,20 @@
+<div class="container">
+    <nav class="navbar">
+        <ul>
+          <li (click)="navigateTo('home')">Home</li>
+          <li (click)="navigateTo('donor')">Donor</li>
+          <li (click)="navigateTo('hospitals')">Hospitals</li>
+          <li (click)="navigateTo('requests')">Requests</li>
+          <li (click)="navigateTo('appointments')">Appointments</li>
+        </ul>
+        <div class="profile">
+          <h2 (click)="toggleProfile()">Welcome {{user.username}}</h2>
+          <div *ngIf="isLoggedIn" class="login-btn" (click)="logout()">
+            <div class="profiledrpDwn">
+              Logout
+            </div>
+          </div>
+        </div>
+      </nav>
+
+</div>

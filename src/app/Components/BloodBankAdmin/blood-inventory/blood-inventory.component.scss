@@ -1,15 +1,6 @@
-$primary-color: #8e4c12;
-$secondary-color: #f7fafc;
-$background-color: #edf2f7;
-$blood-color: #db0000;
-$card-background-color: #ffffff;
-$hover-color: #e7a447;
-$shadow-color: rgba(0, 0, 0, 0.1);
-$hover-shadow-color: rgba(0, 0, 0, 0.2);
-$transition-time: 0.3s;
+@import "../../../../styles.scss";
 
 .inventory-container {
-    padding: 20px;
     background-color: $card-background-color;
    
   
@@ -47,7 +38,7 @@ $transition-time: 0.3s;
         color: $primary-color;
         // border: #333 solid 0.5px;
         border-radius: 5px;
-        box-shadow: #333 0px 0px 8px;
+        box-shadow: $box-shadow;
         cursor: pointer;
         transition: background-color 0.2s;
   
@@ -62,7 +53,7 @@ $transition-time: 0.3s;
       margin-top: 20px;
   
       h1 {
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
         margin-bottom: 10px;
 
@@ -81,7 +72,7 @@ $transition-time: 0.3s;
         background-color: #fff;
         border: 1px solid #ddd;
         border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: $box-shadow;
         margin: 10px;
         padding: 15px;
         text-align: center;

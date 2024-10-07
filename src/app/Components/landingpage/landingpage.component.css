@@ -5,10 +5,9 @@
   justify-content: center;
   align-items: center;
   background-color: #f0f4f8;
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
   flex-direction: column;
 }
-
 .landing-page .heading {
   z-index: 2;
   text-align: center;
@@ -16,20 +15,16 @@
   flex-direction: column;
   padding: 10px;
 }
-
 .landing-page .heading h1 {
   font-size: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 .landing-page .heading p {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 .landing-page .heading p strong {
-  color: #a06608d1;
+  color: rgba(160, 102, 8, 0.8196078431);
 }
-
 .landing-page .background-image {
   position: absolute;
   top: 0;
@@ -41,7 +36,6 @@
   opacity: 0.2;
   z-index: 1;
 }
-
 .landing-page .role-selection-card {
   position: relative;
   z-index: 2;
@@ -53,20 +47,17 @@
   text-align: center;
   animation: popUp 0.5s ease-out;
 }
-
 .landing-page .role-selection-card h2 {
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
   color: #333;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
-
 .landing-page .role-selection-card .roles {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-
 .landing-page .role-selection-card .roles button {
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
@@ -78,7 +69,6 @@
   cursor: pointer;
   transition: transform 0.2s ease, background-color 0.2s ease;
 }
-
 .landing-page .role-selection-card .roles button:hover {
   background-color: #e7a447;
   transform: translateY(-3px);
@@ -93,4 +83,4 @@
     transform: scale(1);
     opacity: 1;
   }
-}
+}/*# sourceMappingURL=landingpage.component.css.map */

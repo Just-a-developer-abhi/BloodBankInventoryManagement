@@ -1,0 +1,146 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.requests-container {
+  padding: 20px;
+  background-color: #ffffff;
+}
+.requests-container h1 {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.requests-container h1 strong {
+  color: #db0000;
+}
+.requests-container .request-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.requests-container .request-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  padding: 15px;
+  width: 500px;
+  height: 20vh;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  align-items: center;
+}
+.requests-container .request-card:hover {
+  transform: scale(1.09);
+}
+.requests-container .request-card h2 {
+  margin: 10px 0;
+  font-size: 1.25em;
+  color: #333;
+}
+.requests-container .request-card p {
+  color: #666;
+}
+.requests-container .request-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-image: linear-gradient(to left, #C9E3AC, #90BE6D);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  margin: 20px auto;
+}
+.requests-container .request-details h2 {
+  font-size: 20px;
+  text-align: center;
+}
+.requests-container .request-details ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.requests-container .request-details ul li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #333;
+}
+.requests-container .request-details ul button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  background-color: #EAEFBD;
+  transition: ease-in-out;
+}
+.requests-container .request-details ul button:hover {
+  transform: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: #90BE6D;
+}/*# sourceMappingURL=blood-request.component.css.map */

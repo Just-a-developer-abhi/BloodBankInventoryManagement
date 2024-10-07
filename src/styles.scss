@@ -18,3 +18,14 @@ h1, h2, h3, h4, h5, h6{margin:0; font-size:inherit; font-weight:inherit;}
 p{margin:0;}
 cite {font-style:normal;}
 fieldset{border-width:0; padding:0; margin:0;}
+
+$primary-color: #8e4c12;
+$secondary-color: #f7fafc;
+$background-color: #edf2f7;
+$blood-color: #db0000;
+$card-background-color: #ffffff;
+$hover-color: #e7a447;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$hover-shadow-color: rgba(0, 0, 0, 0.2);
+$transition-time: 0.5s;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);

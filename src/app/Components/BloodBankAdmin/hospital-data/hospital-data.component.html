@@ -1,0 +1,14 @@
+<app-header></app-header>
+
+<div class="hospital-list-container">
+    <h1>Registered <strong>Hospitals</strong></h1>
+    <div class="hospital-list">
+      <div *ngFor="let hospital of hospitals" class="hospital-card">
+        <!-- <img [src]="hospital.hospitalLogo" alt="{{ hospital.hospitalName }}'s Logo" class="hospital-logo"/> -->
+        <h2>{{ hospital.hospitalName }}</h2>
+        <p>Address: {{ hospital.hospitalAddress }}</p>
+        <p>Contact: {{ hospital.hospitalEmail }}</p>
+      </div>
+    </div>
+  </div>
+  

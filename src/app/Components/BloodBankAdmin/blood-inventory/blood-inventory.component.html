@@ -1,20 +1,11 @@
 <div class="inventory-container">
-    <nav class="navbar">
-      <ul>
-        <li (click)="navigateTo('home')">Home</li>
-        <li (click)="navigateTo('donor')">Donor</li>
-        <li (click)="navigateTo('hospitals')">Hospitals</li>
-        <li (click)="navigateTo('requests')">Requests</li>
-        <li (click)="navigateTo('appointments')">Appointments</li>
-      </ul>
-      <button class="add-donor-btn" (click)="addNewDonor()">Add New Donor</button>
-    </nav>
+    <app-header></app-header>
   
     <div class="card-section">
       <h1>KEEP THE <strong>BLOOD BANK</strong> SHELVES FULL</h1>
       <div class="inventory-list">
         <div *ngFor="let item of inventoryItems" class="inventory-card">
-          <h2>{{item.storageType}}</h2>
+          <h2>{{item.bloodGroup}}</h2>
           <p>Quantity: {{ item.quantity }}</p>
         </div>
       </div>

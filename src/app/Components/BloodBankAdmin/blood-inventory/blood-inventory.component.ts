@@ -3,12 +3,13 @@ import { UserService } from '../../../Services/user/user.service';
 import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import {HttpClient, HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from '../../header/header.component';
 
 
 @Component({
   selector: 'app-blood-inventory',
   standalone: true,
-  imports: [CommonModule, HttpClientModule],
+  imports: [CommonModule, HttpClientModule, HeaderComponent],
   providers: [UserService],
   templateUrl: './blood-inventory.component.html',
   styleUrl: './blood-inventory.component.scss'
@@ -44,7 +45,7 @@ export class BloodInventoryComponent implements OnInit {
   }
 
   navigateTo(tab: string) {
-    // Logic to navigate to the selected tab
+    this.router.navigate([tab]);
     console.log(`Navigating to ${tab}`);
   }
 

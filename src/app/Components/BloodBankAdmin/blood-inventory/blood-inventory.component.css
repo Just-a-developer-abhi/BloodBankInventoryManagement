@@ -1,8 +1,71 @@
-.inventory-container {
-  padding: 20px;
-  background-color: #ffffff;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
+/*** box sizing border-box for all elements ***/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+ul, ol, dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+cite {
+  font-style: normal;
+}
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.inventory-container {
+  background-color: #ffffff;
+}
 .inventory-container .navbar {
   display: flex;
   justify-content: space-between;
@@ -14,64 +77,54 @@
   width: 100%;
   box-shadow: #333 0px 0px 10px;
 }
-
 .inventory-container .navbar ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
 }
-
 .inventory-container .navbar ul li {
   margin: 0 15px;
   cursor: pointer;
   transition: color 0.2s;
 }
-
 .inventory-container .navbar ul li:hover {
   color: #6D3D14;
 }
-
 .inventory-container .navbar .add-donor-btn {
   padding: 10px 15px;
   background-color: #ffffff;
   color: #8e4c12;
   border-radius: 5px;
-  box-shadow: #333 0px 0px 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   cursor: pointer;
   transition: background-color 0.2s;
 }
-
 .inventory-container .navbar .add-donor-btn:hover {
   background-color: #8e4c12;
   color: White;
 }
-
 .inventory-container .card-section {
   margin-top: 20px;
 }
-
 .inventory-container .card-section h1 {
-  font-size: 20px;
+  font-size: 25px;
   text-align: center;
   margin-bottom: 10px;
 }
-
 .inventory-container .card-section h1 strong {
   color: #db0000;
 }
-
 .inventory-container .card-section .inventory-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .inventory-container .card-section .inventory-card {
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
   margin: 10px;
   padding: 15px;
   text-align: center;
@@ -83,18 +136,15 @@
   align-items: center;
   flex-direction: column;
 }
-
 .inventory-container .card-section .inventory-card:hover {
   cursor: pointer;
   transform: scale(1.05);
 }
-
 .inventory-container .card-section .inventory-card h2 {
   margin: 10px 0;
   font-size: 1.8em;
   color: #333;
 }
-
 .inventory-container .card-section .inventory-card p {
   color: #666;
-}
+}/*# sourceMappingURL=blood-inventory.component.css.map */

@@ -1,1 +1,36 @@
-<p>donor-profile works!</p>
+<div class="donor-profile-card">
+    <button class="logout" (click)="logout()">Logout</button>
+    <div class="donor-info">
+      <!-- <img [src]="'assets/profiles/' + donorDetails.profileImage" alt="Profile Picture" class="profile-picture"> -->
+      <h2>A <strong>HEARTILY</strong> WELCOME TO <strong>RAQTDAN</strong></h2>
+      <h1> {{ donorDetails?.fullName }}</h1>
+      <p><strong>Blood Type:</strong> {{ donorDetails?.bloodGroup }}</p>
+      <p><strong>Age:</strong> {{ donorDetails?.age }}</p>
+      <p><strong>Contact:</strong> {{ donorDetails?.phone }}</p>
+      <p><strong>Address:</strong> {{ donorDetails?.address }}</p>
+    </div>
+  
+    <div class="appointment-scheduler">
+      <h3>Schedule an Appointment</h3>
+      <form [formGroup]="appointmentForm" (ngSubmit)="onScheduleAppointment()">
+        <div class="form-field">
+          <label for="date">Date</label>
+          <input id="date" formControlName="date" type="date">
+        </div>
+  
+        <div class="form-field">
+          <label for="time">Time</label>
+          <input id="time" formControlName="time" type="time">
+        </div>
+  
+        <div class="form-field">
+          <label for="location">Location</label>
+          <input id="location" formControlName="location" type="text">
+        </div>
+  
+        <button type="submit" [disabled]="appointmentForm.invalid">Schedule</button>
+      </form>
+    </div>
+    <P class="copyright">Powered By <strong>HashedIn</strong></P>
+  </div>
+  

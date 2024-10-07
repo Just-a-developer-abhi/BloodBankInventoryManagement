@@ -1,1 +1,24 @@
-<p>blood-request works!</p>
+<app-header></app-header>
+
+<div class="requests-container">
+    <h1><strong>Blood</strong> Requests from Hospitals</h1>
+    <div class="request-list">
+      <div *ngFor="let request of requests" class="request-card" (click)="viewDetails(request)">
+        <h2>{{ request.hospitalName }} </h2>
+        <p>Total Quantity: {{ request.totalQuantity }}</p>
+      </div>
+    </div>
+  
+    <div *ngIf="selectedRequest" class="request-details">
+      <h2>Details for {{ selectedRequest.hospitalName }}</h2>
+      <ul>
+        <li *ngFor="let bloodGroup of selectedRequest.bloodGroups">
+          <strong>{{ bloodGroup?.bloodGroup }}:</strong> {{ bloodGroup?.quantity }}
+          <button (click)="acceptRequest(selectedRequest)">Accept</button>
+          <button (click)="rejectRequest(selectedRequest)">Reject</button>
+        </li>
+       
+      </ul>
+    </div>
+  </div>
+  

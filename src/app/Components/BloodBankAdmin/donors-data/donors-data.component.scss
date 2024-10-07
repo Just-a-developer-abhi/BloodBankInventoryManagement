@@ -1,0 +1,84 @@
+@import "../../../../styles.scss";
+
+.donor-list-container {
+    padding: 20px;
+    background-color: #ffffff;
+  
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 25px;
+
+      strong{
+        color: $blood-color
+      }
+    }
+  
+    .donor-list {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      justify-content: center; 
+      margin-left: 5%;
+    }
+  
+    .donor-card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: $box-shadow;
+      margin: 15px;
+      padding: 15px;
+      width: 95%; 
+      height: 10vh;
+      text-align: center;
+      transition: transform 0.2s;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+
+
+      
+  
+      &:hover {
+        transform: scale(1.05); 
+        cursor: pointer;
+      }
+  
+      .profile-picture {
+        width: 100px; 
+        height: 100px; 
+        border-radius: 50%; 
+        object-fit: cover;
+        margin-bottom: 10px; 
+      }
+  
+      h2 {
+        margin: 10px 0;
+        font-size: 1.25em;
+        color: #333;
+      }
+  
+      p {
+        color: #666;
+        margin: 5px 0; 
+      }
+    }
+  }
+  .add-donor-btn {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: $primary-color;
+    // border: #333 solid 0.5px;
+    border-radius: 5px;
+    box-shadow: #333 0px 0px 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 82%;
+
+    &:hover {
+      background-color: $primary-color;
+      color: White;
+    }
+  }
+  

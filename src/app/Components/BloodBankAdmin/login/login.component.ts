@@ -26,8 +26,8 @@ export class LoginComponent implements OnInit {
   constructor(private userService: UserService,private router: Router) {}
   
   ngOnInit(): void {
-    if(localStorage.getItem('loggedInUser')){
-    localStorage.removeItem('loggedInUser');
+    if(sessionStorage.getItem('loggedInUser')){
+    sessionStorage.removeItem('loggedInUser');
     }
   }
 
@@ -42,7 +42,7 @@ export class LoginComponent implements OnInit {
     this.userService.login(this.credentials.username,this.credentials.password,this.role).subscribe(
       (data) => {
         console.log(data);
-        localStorage.setItem('loggedInUser', JSON.stringify(data));
+        sessionStorage.setItem('loggedInUser', JSON.stringify(this.credentials));
         // Redirect based on the role (this is optional, you can modify it as per your app flow)
       if (this.role === 'Staff') {
         this.router.navigate(['/bb-staff/home']); // Example route for BB Staff
