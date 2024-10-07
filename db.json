@@ -1,0 +1,250 @@
+{
+  "Donors": [
+    {
+      "id": "1",
+      "fullName": "Admin",
+      "username": "admin123",
+      "password": "admin123",
+      "bloodGroup": "A+",
+      "confirmendBloodGroup": "A+"
+    },
+    {
+      "id": "1",
+      "fullName": "Admin",
+      "username": "admin123",
+      "password": "admin123",
+      "bloodGroup": "A+",
+      "confirmendBloodGroup": "A+"
+    },
+    {
+      "id": "1",
+      "fullName": "Admin",
+      "username": "admin123",
+      "password": "admin123",
+      "bloodGroup": "A+",
+      "confirmendBloodGroup": "A+"
+    },
+    {
+      "id": "1",
+      "fullName": "Admin",
+      "username": "admin123",
+      "password": "admin123",
+      "bloodGroup": "A+",
+      "confirmendBloodGroup": "A+"
+    },
+    {
+      "id": "450c",
+      "fullName": "",
+      "username": "aparichit",
+      "password": "12345",
+      "role": "Donor",
+      "bloodGroup": "B+",
+      "age": 24
+    }
+  ],
+  "Staffs": [
+    {
+      "id": "1",
+      "fullName": "John Doe",
+      "username": "abhi",
+      "password": "12345",
+      "staffId": "123456",
+      "position": "P2"
+    },
+    {
+      "id": "1",
+      "fullName": "John Doe",
+      "username": "john_doe",
+      "password": "password123",
+      "staffId": "123456",
+      "position": "P2"
+    },
+    {
+      "id": "1",
+      "fullName": "John Doe",
+      "username": "john_doe",
+      "password": "password123",
+      "staffId": "123456",
+      "position": "P2"
+    }
+  ],
+  "Hospitals": [
+    {
+      "id": "1",
+      "username": "TataMemorial",
+      "password": "123456789",
+      "hospitalName": "Tata Memorial Hospital",
+      "hospitalLicense": "123456789"
+    }
+  ],
+  "storage": [
+    {
+      "id": "1",
+      "storageType": "RBCL",
+      "expiryDate": "2023-10-01",
+      "bloodGroups": [
+        {
+          "bloodGroup": "A+",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "A-",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "B+",
+          "quantity": "100"
+        },
+        {
+          "BloodGroup": "B-",
+          "Quantity": "100"
+        },
+        {
+          "BloodGroup": "O+",
+          "Quantity": "50"
+        }
+      ],
+      "sample_id": "ccc1232"
+    },
+    {
+      "id": "2",
+      "storageType": "Frozen Pooled Plasma",
+      "expiryDate": "2023-10-01",
+      "bloodGroups": [
+        {
+          "bloodGroup": "A+",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "A-",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "B+",
+          "quantity": "100"
+        },
+        {
+          "BloodGroup": "B-",
+          "Quantity": "100"
+        },
+        {
+          "BloodGroup": "O+",
+          "Quantity": "50"
+        }
+      ],
+      "sample_id": "ccc1232"
+    },
+    {
+      "id": "3",
+      "storageType": "Frozen Single Cryo",
+      "expiryDate": "2023-10-01",
+      "bloodGroups": [
+        {
+          "bloodGroup": "A+",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "A-",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "B+",
+          "quantity": "100"
+        },
+        {
+          "BloodGroup": "B-",
+          "Quantity": "100"
+        },
+        {
+          "BloodGroup": "O+",
+          "Quantity": "50"
+        }
+      ],
+      "sample_id": "ccc1232"
+    },
+    {
+      "id": "4",
+      "storageType": "All Platlets",
+      "expiryDate": "2023-10-01",
+      "bloodGroups": [
+        {
+          "bloodGroup": "A+",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "A-",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "B+",
+          "quantity": "100"
+        },
+        {
+          "BloodGroup": "B-",
+          "Quantity": "100"
+        },
+        {
+          "BloodGroup": "O+",
+          "Quantity": "50"
+        }
+      ],
+      "sample_id": "ccc1232"
+    },
+    {
+      "id": "5",
+      "storageType": "Frozen Plasma",
+      "expiryDate": "2023-10-01",
+      "bloodGroups": [
+        {
+          "bloodGroup": "A+",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "A-",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "B+",
+          "quantity": "100"
+        },
+        {
+          "BloodGroup": "B-",
+          "Quantity": "100"
+        },
+        {
+          "BloodGroup": "O+",
+          "Quantity": "50"
+        }
+      ],
+      "sample_id": "ccc1232"
+    },
+    {
+      "id": "5",
+      "storageType": "Thawed Plasma",
+      "expiryDate": "2023-10-01",
+      "bloodGroups": [
+        {
+          "bloodGroup": "A+",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "A-",
+          "quantity": "100"
+        },
+        {
+          "bloodGroup": "B+",
+          "quantity": "100"
+        },
+        {
+          "BloodGroup": "B-",
+          "Quantity": "100"
+        },
+        {
+          "BloodGroup": "O+",
+          "Quantity": "50"
+        }
+      ],
+      "sample_id": "ccc1232"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+$primary-color: #8e4c12;
+$secondary-color: #f7fafc;
+$background-color: #edf2f7;
+$blood-color: #db0000;
+$card-background-color: #ffffff;
+$hover-color: #e7a447;
+$shadow-color: rgba(0, 0, 0, 0.1);
+$hover-shadow-color: rgba(0, 0, 0, 0.2);
+$transition-time: 0.3s;
+
+.inventory-container {
+    padding: 20px;
+    background-color: $card-background-color;
+   
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: $card-background-color;
+      color: black;
+      padding: 10px 50px;
+      border-radius: 15px;
+      width: 100%;
+      box-shadow: #333 0px 0px 10px;
+  
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+  
+        li {
+          margin: 0 15px;
+          cursor: pointer;
+          transition: color 0.2s;
+  
+          &:hover {
+            color: #6D3D14;
+          }
+        }
+      }
+  
+      .add-donor-btn {
+        padding: 10px 15px;
+        background-color: #ffffff;
+        color: $primary-color;
+        // border: #333 solid 0.5px;
+        border-radius: 5px;
+        box-shadow: #333 0px 0px 8px;
+        cursor: pointer;
+        transition: background-color 0.2s;
+  
+        &:hover {
+          background-color: $primary-color;
+          color: White;
+        }
+      }
+    }
+  
+    .card-section {
+      margin-top: 20px;
+  
+      h1 {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 10px;
+
+        strong {
+            color: $blood-color;
+        }
+      }
+  
+      .inventory-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  
+      .inventory-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 15px;
+        text-align: center;
+        width: 30%;
+        height: 200px; // Fixed width for cards
+        transition: transform 0.2s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  
+        &:hover {
+            cursor: pointer;
+          transform: scale(1.05);
+        }
+  
+        h2 {
+          margin: 10px 0;
+          font-size: 1.8em;
+          color: #333;
+        }
+  
+        p {
+          color: #666;
+        }
+      }
+    }
+  }
+  

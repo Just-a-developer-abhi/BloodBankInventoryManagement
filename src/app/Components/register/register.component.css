@@ -1,0 +1,103 @@
+.register-container {
+  display: flex;
+  height: 100vh;
+  background-color: #edf2f7;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container .sub-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  height: 90vh;
+  width: 80vw;
+  background-color: #ffffff;
+  border-radius: 100px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+}
+
+.register-container .sub-container .image-section {
+  flex: 1;
+  background-image: url("../../../assets/dna-donor.jpeg");
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.register-container .sub-container .register-section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.register-container .sub-container .register-section h1 {
+  font-size: 30px;
+}
+
+.register-container .sub-container .register-section h1 strong {
+  color: #db0000;
+}
+
+.register-container .sub-container .register-section .register-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.register-container .sub-container .register-section .register-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #8e4c12;
+}
+
+.register-container .sub-container .register-section .register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.register-container .sub-container .register-section .register-card form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.register-container .sub-container .register-section .register-card form .form-group label {
+  font-size: 14px;
+  color: #4a5568;
+}
+
+.register-container .sub-container .register-section .register-card form .form-group input, .register-container .sub-container .register-section .register-card form .form-group select {
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.register-container .sub-container .register-section .register-card form .form-group input:focus, .register-container .sub-container .register-section .register-card form .form-group select:focus {
+  border-color: #8e4c12;
+  outline: none;
+}
+
+.register-container .sub-container .register-section .register-card form .btn-register {
+  padding: 10px;
+  border: none;
+  background-color: #8e4c12;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.register-container .sub-container .register-section .register-card form .btn-register:hover {
+  background-color: #e7a447;
+}
